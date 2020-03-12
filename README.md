@@ -37,3 +37,6 @@ No mouse: You can navigate the site fine, but the experience is far from great,
 No fast internet: Loading takes a little longer with it works fine,  
 No javascript: My base layout works fine because that's done in html and css but you're stuck in an unending loading loop,  
 No cookies/local storage: I dont use either, so everyting works perfectly
+
+Screen reader test:
+You can navigate my overview page perfectly, but my detail page doesn't have focus states for my items so you can't listen to those.
