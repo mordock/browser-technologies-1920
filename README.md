@@ -39,4 +39,6 @@ No javascript: My base layout works fine because that's done in html and css but
 No cookies/local storage: I dont use either, so everyting works perfectly
 
 Screen reader test:
+For this test I used the build in windows screen reader. For this screen reader to actually read browsers you need focus states on objects, because the reader 'reads' what's in focus on the screen. 
 You can navigate my overview page perfectly, but my detail page doesn't have focus states for my items so you can't listen to those.
+I can fix this by adding focus states to the detail page, this would also help with no mouse navigation. 
