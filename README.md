@@ -29,7 +29,7 @@ Nexus 5, android 6.0.1, Chrome version 75: everyting works perfectly
 Ipod touch, Safari version 6: layout works, but he doesn't get the data. Fetch only works from Safari version 10.  
 Ipad, safari version 9: layout works, but he doesn't get the data. Fetch only works from Safari version 10. 
 
-Feature tests:
+Feature tests:  
 No images: everything works perfectly,  
 No fonts: title changes to browser default, perfectly otherwise,  
 Color blindness: I used 'I want to see like the color blind people': every version works fine,  
@@ -37,6 +37,15 @@ No mouse: You can navigate the site fine, but the experience is far from great,
 No fast internet: Loading takes a little longer with it works fine,  
 No javascript: My base layout works fine because that's done in html and css but you're stuck in an unending loading loop,  
 No cookies/local storage: I dont use either, so everyting works perfectly
+
+feature (possible) fixed:  
+No images: give your image components widths and heights so your layout is still fine,  
+No fonts: Make sure you set a font for your app base a fallback, or several fallbacks in case of not supported fonts,  
+Color blindness: When making your app, pay attention to color contrast. Use tools to check your pages,  
+No mouse: Give all your buttons and imporant text focus states,  
+No fast internet: Optimize your resources, like reduce image size and use a service worker,  
+No javascript: Make sure your layout has a base and possibly some info for the user to look at if Javascript doesn't work, 
+No cookies/local storage: Make sure the base of your site works without so the user is still able to use your site without.
 
 Screen reader test:
 For this test I used the build in windows screen reader. For this screen reader to actually read browsers you need focus states on objects, because the reader 'reads' what's in focus on the screen. 
