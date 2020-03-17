@@ -38,7 +38,7 @@ No fast internet: Loading takes a little longer with it works fine,
 No javascript: My base layout works fine because that's done in html and css but you're stuck in an unending loading loop,  
 No cookies/local storage: I dont use either, so everyting works perfectly
 
-feature (possible) fixed:  
+feature (possible) fixes:  
 No images: give your image components widths and heights so your layout is still fine,  
 No fonts: Make sure you set a font for your app base a fallback, or several fallbacks in case of not supported fonts,  
 Color blindness: When making your app, pay attention to color contrast. Use tools to check your pages,  
