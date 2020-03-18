@@ -56,3 +56,7 @@ Opdracht 2:
 
 Wireflow:  
 ![alt test](https://github.com/mordock/browser-technologies-1920/blob/master/Resources/Wireflow.png)
+
+Enchantment:  
+Progress bar,  
+
