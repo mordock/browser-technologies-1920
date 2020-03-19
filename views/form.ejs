@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stycle.css">
+    <title>Enquete</title>
+</head>
+<body>
+    <header>
+        <h1>Minor-Web Enquete</h1>
+    </header>
+
+    <section id="mainSection">
+        <p>De komende vragen gaan over de minor web.</p>
+
+        <div class="questionBox">
+            <h2>Dit is de eerste vraag met 3 opties?</h2>
+            <form action="">
+                <input type="radio" name="option1" value="Dit is de eerste optie">Dit is de eerste optie<br>
+                <input type="radio" name="option2" value="Dit is een andere optie">Dit is een andere optie<br>
+                <input type="radio" name="option3" value="Dit is nog een optie">Dit is nog een optie<br>
+            </form>
+        </div>
+
+        <div class="questionBox">
+            <h2>Dit is de tweede vraag met een open antwoord?</h2>
+            <textarea id="Question2TextBox" rows="5" cols="50"></textarea>
+        </div>
+
+        <div class="questionBox"> 
+            <h2>Dit is de derde vraag met een meerdere antwoorden?</h2>
+            <form action="/action_page.php">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1">Dit is een optie</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2">Wow, een tweede optie</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3">Geweldig, nummer 3</label><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+
+
+        <div id="buttonsContainer">
+            <form action="/save" method="GET">
+                <input id="SaveButton" type="submit" value="Save">
+            </form>
+            <form action="/save" method="GET">
+                <input id="DoneButton" type="submit" value="Done">
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

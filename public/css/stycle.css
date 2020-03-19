@@ -1,0 +1,31 @@
+/* ids */
+#mainSection{
+    border: 4mm ridge cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+/* classes */
+.questionBox{
+    border: 2mm solid cornflowerblue;
+}
+
+/* elements */
+header{
+    background-color: cornflowerblue;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    background-color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
