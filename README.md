@@ -55,7 +55,7 @@ I can fix this by adding focus states to the detail page, this would also help w
 Opdracht 2:
 
 Wireflow:  
-![alt test](https://github.com/mordock/browser-technologies-1920/blob/master/Resources/Wireflow.png)
+![alt test](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/Wireflow.png)
 
 Enchantment:  
 Progress bar,  
