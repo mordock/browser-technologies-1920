@@ -16,28 +16,39 @@
 
         <div class="questionBox">
             <h2>Dit is de eerste vraag met 3 opties?</h2>
-            <form action="">
-                <input type="radio" name="option1" value="Dit is de eerste optie">Dit is de eerste optie<br>
-                <input type="radio" name="option2" value="Dit is een andere optie">Dit is een andere optie<br>
-                <input type="radio" name="option3" value="Dit is nog een optie">Dit is nog een optie<br>
+            
+            <form action="/questionOne" method="GET">
+                <input type="radio" id="Q1option1" name="Q1" value="Q1option1">
+                <label for="Q1option1">Dit is de eerste optie</label><br>
+
+                <input type="radio" id="Q1option2" name="Q1" value="Q1option2">
+                <label for="Q1option2">Dit is een andere optie</label><br>
+
+                <input type="radio" id="Q1option3" name="Q1" value="Q1option3">
+                <label for="Q1option3">Dit is nog een optie</label><br>
+
+                <input type="submit" value="Opslaan">
             </form>
         </div>
 
         <div class="questionBox">
-            <h2>Dit is de tweede vraag met een open antwoord?</h2>
-            <textarea id="Question2TextBox" rows="5" cols="50"></textarea>
+            <form action="/questionTwo" method="GET"> 
+                <label for="Q1option1">Dit is de eerste optie</label><br>
+                <textarea id="Q2TextBox" name="Q2" rows="5" cols="30"></textarea><br>
+                <input type="submit" value="Opslaan">
+            </form>
         </div>
 
         <div class="questionBox"> 
             <h2>Dit is de derde vraag met een meerdere antwoorden?</h2>
-            <form action="/action_page.php">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1">Dit is een optie</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2">Wow, een tweede optie</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3">Geweldig, nummer 3</label><br><br>
-                <input type="submit" value="Submit">
+            <form action="/questionThree" method="GET">
+                <input type="checkbox" id="Q3option1" name="Q3" value="Q3option1">
+                <label for="option1">Dit is een optie</label><br>
+                <input type="checkbox" id="Q3option2" name="Q3" value="Q3option2">
+                <label for="option2">Wow, een tweede optie</label><br>
+                <input type="checkbox" id="Q3option3" name="Q3" value="Q3option3">
+                <label for="option3">Geweldig, nummer 3</label><br><br>
+                <input type="submit" value="Opslaan">
               </form>
         </div>
 
