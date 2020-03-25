@@ -15,17 +15,35 @@
     border: 2mm solid cornflowerblue;
 }
 
+.link{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
 /* elements */
+body{
+    background-color: ivory;
+}
+
 header{
     background-color: cornflowerblue;
 }
 
 p{
+    border: 4px blue solid;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+label{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 input{
     background-color: cornflowerblue;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     padding: 3px;
 }

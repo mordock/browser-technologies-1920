@@ -12,23 +12,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
-    res.render('form');
+
+    const completeUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+
+    res.render('form', {
+        query: req.query,
+        url: completeUrl
+    });
 });
 
-app.get('/questionOne', (req, res) => {
-    console.log(req.query.Q1);
-    
-    return res.send(req.query);
-});
+app.get("/overzicht", function(req, res) {
+    const completeUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
 
-app.get('/questionTwo', (req, res) => {
-    console.log(req.query.Q2);
-    return res.send(req.query);
-});
-
-app.get('/questionThree', (req, res) => {
-    console.log(req.query.Q3);
-    return res.send(req.query);
-});
+    res.render("overzicht", {
+      query: req.query,
+      url: completeUrl,
+      urlExtension: req.originalUrl
+    });
+  });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

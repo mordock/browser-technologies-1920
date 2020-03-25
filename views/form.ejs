@@ -11,57 +11,47 @@
         <h1>Minor-Web Enquete</h1>
     </header>
 
-    <section id="mainSection">
-        <p>De komende vragen gaan over de minor web.</p>
+    <form>
+        <label>
+          Voornaam:
+          <input type="text" name="voornaam" value="<%= query.voornaam %>">
+        </label><br>
+        <label>
+          Achternaam:
+          <input type="text" name="achternaam" value="<%= query.achternaam %>" />
+        </label><br>
 
-        <div class="questionBox">
-            <h2>Dit is de eerste vraag met 3 opties?</h2>
-            
-            <form action="/questionOne" method="GET">
-                <input type="radio" id="Q1option1" name="Q1" value="Q1option1">
-                <label for="Q1option1">Dit is de eerste optie</label><br>
+        <label>
+            <input type="radio" name="geslacht" value="man"
+            <% if (query.geslacht == "man") { %>
+            checked <!-- Als het geslacht 'man' is word deze checkbox aangevinkt -->
+            <% } %>
+            >
+            Man
+        </label>
+        <label>
+            <input type="radio" name="geslacht" value="vrouw"
+            <% if (query.geslacht == "vrouw") { %>
+            checked <!-- Als het geslacht 'vrouw' is word deze checkbox aangevinkt -->
+            <% } %>
+            >
+            Vrouw
+        </label><br>
 
-                <input type="radio" id="Q1option2" name="Q1" value="Q1option2">
-                <label for="Q1option2">Dit is een andere optie</label><br>
+        <label>
+            Wat is je favoriete kleur?
+            <input type="color" name="color" value="<%= query.color %>">
+        </label><br>
 
-                <input type="radio" id="Q1option3" name="Q1" value="Q1option3">
-                <label for="Q1option3">Dit is nog een optie</label><br>
+        <input type="submit" value="opslaan" formaction="/">
+        <input type="submit" value="versturen" formaction="/overzicht">
+    </form>
 
-                <input type="submit" value="Opslaan">
-            </form>
-        </div>
-
-        <div class="questionBox">
-            <form action="/questionTwo" method="GET"> 
-                <label for="Q1option1">Dit is de eerste optie</label><br>
-                <textarea id="Q2TextBox" name="Q2" rows="5" cols="30"></textarea><br>
-                <input type="submit" value="Opslaan">
-            </form>
-        </div>
-
-        <div class="questionBox"> 
-            <h2>Dit is de derde vraag met een meerdere antwoorden?</h2>
-            <form action="/questionThree" method="GET">
-                <input type="checkbox" id="Q3option1" name="Q3" value="Q3option1">
-                <label for="option1">Dit is een optie</label><br>
-                <input type="checkbox" id="Q3option2" name="Q3" value="Q3option2">
-                <label for="option2">Wow, een tweede optie</label><br>
-                <input type="checkbox" id="Q3option3" name="Q3" value="Q3option3">
-                <label for="option3">Geweldig, nummer 3</label><br><br>
-                <input type="submit" value="Opslaan">
-              </form>
-        </div>
-
-
-        <div id="buttonsContainer">
-            <form action="/save" method="GET">
-                <input id="SaveButton" type="submit" value="Save">
-            </form>
-            <form action="/save" method="GET">
-                <input id="DoneButton" type="submit" value="Done">
-            </form>
-        </div>
-    </section>
+    <div class="link">
+        <% if (query.voornaam) { %>
+            <p> Sla deze link op om door te gaan:<br> <%= url %> </p>
+        <% } %>
+    </div>
     
-</body>
+    </body>
 </html>
