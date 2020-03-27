@@ -1,4 +1,3 @@
-
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -34,4 +33,6 @@ app.get("/overzicht", function(req, res) {
     });
   });
 
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+  const PORT = process.env.PORT || 5000;
+
+  app.listen(PORT, () => console.log('server started on port: ' + PORT));
