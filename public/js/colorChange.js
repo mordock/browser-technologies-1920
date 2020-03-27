@@ -13,19 +13,37 @@ let q7 = document.getElementById('q7');
 let q7Label = document.getElementById('q7Label');
 let q8 = document.getElementById('q8');
 let q8Label = document.getElementById('q8Label');
+let q91 = document.getElementById('q91');
+let q92 = document.getElementById('q92');
+let q93 = document.getElementById('q93');
+let q94 = document.getElementById('q94');
+let q95 = document.getElementById('q95');
+let q9Label = document.getElementById('q9Label');
+
+let numberGreen = 0;
+const totalNumberGreen = 9;
 
 window.onload = function(){
     function test(){
+        console.log(numberGreen);
+        //voornaam
         if(q1.value === ''){
-            //do nothing
+            q1Label.style.backgroundColor = 'ivory';
         }else{
-            q1Label.style.backgroundColor = 'green';
+            if(q1.value.length >= 2){
+                q1Label.style.backgroundColor = 'green';
+                numberGreen++;
+            }
         }
 
+        //achternaam
         if(q2.value === ''){
-            //do nothing
+            q2Label.style.backgroundColor = 'ivory';
         }else{
-            q2Label.style.backgroundColor = 'green';
+            if(q2.value.length >= 2){
+                q2Label.style.backgroundColor = 'green';
+                numberGreen++;
+            }
         }
 
         if(q3m.checked){
@@ -36,31 +54,49 @@ window.onload = function(){
 
         //date
         if(!q4){
-            //do nothing
+            q4Label.style.backgroundColor = 'ivory';
         }else{
             q4Label.style.backgroundColor = 'green';
+            numberGreen++;
         }
 
         //color
 
         //phone
         if(q6.value === ''){
-            //do nothing
+            q6Label.style.backgroundColor = 'ivory';
         }else{
             q6Label.style.backgroundColor = 'green';
+            numberGreen++;
         }
 
         //number
         if(q7.value === ''){
-            //do nothing
+            q7Label.style.backgroundColor = 'ivory';
         }else{
             q7Label.style.backgroundColor = 'green';
+            numberGreen++;
         }
 
+        //area
         if(q8.value === ''){
-            //do nothing
+            q8Label.style.backgroundColor = 'ivory';
         }else{
             q8Label.style.backgroundColor = 'green';
+            numberGreen++;
+        }
+
+        //checkbox
+        if(q91.checked){
+            q9Label.style.backgroundColor = 'green';
+        }else if(q92.checked){
+            q9Label.style.backgroundColor = 'green';
+        }else if(q93.checked){
+            q9Label.style.backgroundColor = 'green';
+        }else if(q94.checked){
+            q9Label.style.backgroundColor = 'green';
+        }else if(q95.checked){
+            q9Label.style.backgroundColor = 'green';
         }
 
     }

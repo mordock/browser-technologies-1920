@@ -13,6 +13,12 @@
 
     <p class="topTexts">Vergeet de link niet op te slaan als je later verder wil gaan!</p>
 
+    <div class="link">
+        <% if (query.vNaam) { %>
+            <p> Sla deze link op om door te gaan:<br> <%= url %> </p>
+        <% } %>
+    </div>
+
     <div>
     <form name="formMain">
         <div id="q1Label" class="question">
@@ -84,29 +90,29 @@
             </label><br>
         </div><br>
 
-        <div class="question">
+        <div id="q9Label" class="question">
             <label>
                 <p>Wat zijn je favoriete programmeertalen?</p>
-                <input type="checkbox" name="check1" value="x"
+                <input id="q91" type="checkbox" name="check1" value="x"
                 <% if (query.check1 == "x") { %>
                     checked 
                 <% } %>
                 >Java  
-                <input type="checkbox" name="check2" value="x"
+                <input id="q92" type="checkbox" name="check2" value="x"
                 <% if (query.check2 == "x") { %>
                     checked 
                 <% } %>
                 >Javascript  
-                <input type="checkbox" name="check3" value="x"
+                <input id="q93" type="checkbox" name="check3" value="x"
                 <% if (query.check3 == "x") { %>
                     checked 
                 <% } %>
                 >C  
-                <input type="checkbox" name="check4" value="x"            
+                <input id="q94" type="checkbox" name="check4" value="x"            
                 <% if (query.check4 == "x") { %>
                     checked 
                 <% } %>>C++  
-                <input type="checkbox" name="check5" value="x"
+                <input id="q95" type="checkbox" name="check5" value="x"
                 <% if (query.check5 == "x") { %>
                     checked 
                 <% } %>
@@ -118,14 +124,7 @@
         <input class="sendButton" type="submit" value="versturen" formaction="/overzicht">
 
     </form>
-    </div>
-
-    <div class="link">
-        <% if (query.vNaam) { %>
-            <p> Sla deze link op om door te gaan:<br> <%= url %> </p>
-        <% } %>
-    </div>
-    
+    </div>   
 
     <script src="/js/colorChange.js"></script>
 
