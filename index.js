@@ -12,13 +12,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
+   res.render('prePage');
+});
 
-    const completeUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+app.get('/form', (req, res) => {
+  const completeUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
 
-    res.render('form', {
-        query: req.query,
-        url: completeUrl
-    });
+   res.render('form', {
+    query: req.query,
+    url: completeUrl
+  });
 });
 
 app.get("/overzicht", function(req, res) {
@@ -31,4 +34,4 @@ app.get("/overzicht", function(req, res) {
     });
   });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${port}!`));

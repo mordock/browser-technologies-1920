@@ -11,26 +11,27 @@
         <h1>Minor-Web Enquete</h1>
     </header>
 
-    <% if (query.voornaam) { %>
-        <p> Jouw voornaam is: <%= query.voornaam %> </p>
+    <p>Resultaten:</p>
+
+    <% if (query.vNaam) { %>
+        <p> Jouw voornaam is: <%= query.vNaam %> </p>
     <% } %>
 
-    <% if (query.achternaam) { %>
-        <p> Jouw achternaam is: <%= query.achternaam %> </p>
+    <% if (query.aNaam) { %>
+        <p> Jouw achternaam is: <%= query.aNaam %> </p>
     <% } %>
 
-    <% if (query.geslacht) { %>
-        <p> Jouw geslacht is: <%= query.geslacht %> </p>
+    <% if (query.gesl) { %>
+        <p> Jouw geslacht is: <%= query.gesl %> </p>
     <% } %>
 
-    <% if (query.color) { %>
-        <p> Jouw favoriete kleur is: <%= query.color %> </p>
+    <% if (query.c) { %>
+        <p> Jouw favoriete kleur is: <%= query.c %> </p>
     <% } %>
     <p> Jouw link: <%= url %> </p>
 
     <form>
-        <input type="submit" value="opnieuw" formaction="/">
+        <input type="submit" value="terug" formaction="/">
     </form>
-    
     </body>
 </html>

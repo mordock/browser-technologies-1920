@@ -11,47 +11,123 @@
         <h1>Minor-Web Enquete</h1>
     </header>
 
-    <form>
-        <label>
-          Voornaam:
-          <input type="text" name="voornaam" value="<%= query.voornaam %>">
-        </label><br>
-        <label>
-          Achternaam:
-          <input type="text" name="achternaam" value="<%= query.achternaam %>" />
-        </label><br>
+    <p class="topTexts">Vergeet de link niet op te slaan als je later verder wil gaan!</p>
 
-        <label>
-            <input type="radio" name="geslacht" value="man"
-            <% if (query.geslacht == "man") { %>
-            checked <!-- Als het geslacht 'man' is word deze checkbox aangevinkt -->
-            <% } %>
-            >
-            Man
-        </label>
-        <label>
-            <input type="radio" name="geslacht" value="vrouw"
-            <% if (query.geslacht == "vrouw") { %>
-            checked <!-- Als het geslacht 'vrouw' is word deze checkbox aangevinkt -->
-            <% } %>
-            >
-            Vrouw
-        </label><br>
+    <div>
+    <form name="formMain">
+        <div id="q1Label" class="question">
+            <label>
+            <p class="questionP">Wat is je voornaam?</p>
+            <input type="text" required name="vNaam" value="<%= query.vNaam %>" />
+            </label><br>
+        </div><br>
 
-        <label>
-            Wat is je favoriete kleur?
-            <input type="color" name="color" value="<%= query.color %>">
-        </label><br>
+        <div id="q2Label" class="question">
+            <label>
+            <p>Wat is je achternaam?</p>
+            <input type="text" name="aNaam" value="<%= query.aNaam %>" />
+            </label><br>
+        </div><br>
 
-        <input type="submit" value="opslaan" formaction="/">
-        <input type="submit" value="versturen" formaction="/overzicht">
+        <div id="q3Label" class="question">
+            <label>
+                <p>Wat is je geslacht?</p>
+                <input id="q3Man" type="radio" name="gesl" value="m"
+                <% if (query.gesl == "m") { %>
+                checked <!-- Als het geslacht 'man' is word deze checkbox aangevinkt -->
+                <% } %>
+                >
+                Man
+            </label>
+            <label>
+                <input id="q3Vrouw" type="radio" name="gesl" value="v"
+                <% if (query.gesl == "v") { %>
+                checked <!-- Als het geslacht 'vrouw' is word deze checkbox aangevinkt -->
+                <% } %>
+                >
+                Vrouw
+            </label><br>
+        </div><br>
+
+        <div id="q4Label" class="question">    
+            <label>
+                <p>Wat is je geboorte datum?</p>
+                <input id="q4" type="date" name="bDate" value="<%= query.bDate %>">
+            </label><br>
+        </div><br>
+
+        <div class="question">
+            <label>
+                <p>Wat is je favoriete kleur?</p>
+                <input type="color" name="c" value="<%= query.c %>">
+            </label><br>
+        </div><br>
+
+        <div id="q6Label" class="question">
+            <label>
+                <p>Wat is je telefoon nummer?</p>
+                <input id="q6" type="tel" name="tel" value="<%= query.tel %>">
+            </label><br>
+        </div><br>
+
+        <div class="question">
+            <label>
+                <p>>Welk cijfer geef je BT op een schaal van 1-10?</p>
+                <input type="number" name="num" min="1" max="10" value="<%= query.num %>">
+            </label><br>
+        </div><br>
+
+        <div class="question">
+            <label>
+                <p>Wat is je feedback op BT?</p>
+                <textarea rows="5" cols="40" name="tArea"><%= query.tArea %></textarea>
+            </label><br>
+        </div><br>
+
+        <div class="question">
+            <label>
+                <p>Wat zijn je favoriete programmeertalen?</p>
+                <input type="checkbox" name="check1" value="x"
+                <% if (query.check1 == "x") { %>
+                    checked 
+                <% } %>
+                >Java  
+                <input type="checkbox" name="check2" value="x"
+                <% if (query.check2 == "x") { %>
+                    checked 
+                <% } %>
+                >Javascript  
+                <input type="checkbox" name="check3" value="x"
+                <% if (query.check3 == "x") { %>
+                    checked 
+                <% } %>
+                >C  
+                <input type="checkbox" name="check4" value="x"            
+                <% if (query.check4 == "x") { %>
+                    checked 
+                <% } %>>C++  
+                <input type="checkbox" name="check5" value="x"
+                <% if (query.check5 == "x") { %>
+                    checked 
+                <% } %>
+                >C#  
+            </label><br>
+        </div><br>
+
+        <input class="saveButton" type="submit" value="opslaan" formaction="/form">
+        <input class="sendButton" type="submit" value="versturen" formaction="/overzicht">
+
     </form>
+    </div>
 
     <div class="link">
-        <% if (query.voornaam) { %>
+        <% if (query.vNaam) { %>
             <p> Sla deze link op om door te gaan:<br> <%= url %> </p>
         <% } %>
     </div>
     
+
+    <script src="/js/colorChange.js"></script>
+
     </body>
 </html>

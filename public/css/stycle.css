@@ -1,18 +1,16 @@
 /* ids */
-#mainSection{
-    border: 4mm ridge cornflowerblue;
-    display: flex;
-    flex-direction: column;
-}
-
-#buttonsContainer{
-    display: flex;
-    flex-direction: row;
-}
 
 /* classes */
 .questionBox{
     border: 2mm solid cornflowerblue;
+}
+
+.question{
+    border: 4px solid blue;
+    border-radius: 20px;
+}
+
+.questionP{
 }
 
 .link{
@@ -20,13 +18,46 @@
     border-radius: 5px;
 }
 
+.sendButton{
+    margin-right: 10px;
+    border: 4px dotted blue;
+}
+
+.beginButton{
+    border: 2px solid red;
+}
+
+.saveButton{
+    border: 4px dotted green;
+    margin-right: 10px;
+}
+
+.topTexts{
+    background-color: cornflowerblue;
+}
+
 /* elements */
 body{
+    background-color: powderblue;
+    text-align: center;
+}
+
+div{
+    margin: auto;
+    width: 50%;
+    border: 3px solid blue;
+    padding: 10px;
     background-color: ivory;
+}
+
+form{
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 header{
     background-color: cornflowerblue;
+    text-align: center;
 }
 
 p{
@@ -45,5 +76,11 @@ input{
     background-color: cornflowerblue;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 3px;
+    padding: 5px;
+    margin: auto;
+}
+
+input[type=submit]{
+    width: 25%;
+
 }
