@@ -33,10 +33,17 @@
         <p> Jouw geboortedatum is: <%= query.bDate %> </p>
     <% } %>
 
-    <% if (query.gesl) { %>
-        <p> Jouw geslacht: <%= query.gesl %> </p>
+    <% if (query.tel) { %>
+        <p> Jouw telefoon nummer is: <%= query.tel %> </p>
     <% } %>
-    <p> Jouw link: <%= url %> </p>
+
+    <% if (query.num) { %>
+        <p> Jij gaf BT een cijfer van: <%= query.num %> </p>
+    <% } %>
+
+    <% if (query.tArea) { %>
+        <p> Jouw feedback was: <%= query.tArea %> </p>
+    <% } %>
 
     <form>
         <input type="submit" value="terug" formaction="/">

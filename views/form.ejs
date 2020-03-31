@@ -12,6 +12,7 @@
     </header>
 
     <p class="topTexts">Vergeet de link niet op te slaan als je later verder wil gaan!</p>
+    <progress id="progress" max="9" value="0"></progress>
 
     <div class="link">
         <% if (query.vNaam) { %>
@@ -58,11 +59,12 @@
         <div id="q4Label" class="question">    
             <label>
                 <p>Wat is je geboorte datum?</p>
-                <input id="q4" type="date" name="bDate" value="<%= query.bDate %>">
+                <input id="q4" type="date" name="bDate" max="2001-12-31" value="<%= query.bDate %>">
+                <button id="dateButton" type="button">Check</button>
             </label><br>
         </div><br>
 
-        <div class="question">
+        <div id="q5" class="question">
             <label>
                 <p>Wat is je favoriete kleur?</p>
                 <input type="color" name="c" value="<%= query.c %>">
@@ -71,15 +73,16 @@
 
         <div id="q6Label" class="question">
             <label>
-                <p>Wat is je telefoon nummer?</p>
+                <p>Wat is je telefoon nummer(mobiel)?</p>
                 <input id="q6" type="tel" name="tel" value="<%= query.tel %>">
             </label><br>
         </div><br>
 
-        <div id="q7Label" class="question">
+        <div id="q7Label" class="question" list="tickmarks">
             <label>
                 <p>>Welk cijfer geef je BT op een schaal van 1-10?</p>
                 <input id="q7" type="number" name="num" min="1" max="10" value="<%= query.num %>">
+
             </label><br>
         </div><br>
 
@@ -93,7 +96,7 @@
         <div id="q9Label" class="question">
             <label>
                 <p>Wat zijn je favoriete programmeertalen?</p>
-                <input id="q91" type="checkbox" name="check1" value="x"
+                <input id="q91" type="checkbox" name="check1" value="ja"
                 <% if (query.check1 == "x") { %>
                     checked 
                 <% } %>

@@ -42,6 +42,12 @@ body{
     text-align: center;
 }
 
+progress{
+    width: 50%;
+    border: 3px solid blue;
+    border-radius: 5px;
+}
+
 div{
     margin: auto;
     width: 50%;
@@ -82,5 +88,4 @@ input{
 
 input[type=submit]{
     width: 25%;
-
 }
