@@ -67,11 +67,12 @@ This web app is a simple questionnaire which you can continue by saving the give
 * No images: I dont use images so this is not a problem
 * No custom fonts: I dont use custom fonts, only build in fonts, which have fall backs.
 * Colors: [Can be found here](#contrast)
-* No mouse: Works, you can cycle through all the questions which have focus states
-No focus
+* No mouse: Works, you can cycle through all the questions which have focus states.  
+No focus  
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/mouse001.png)
-Focus
-![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/mouse002.png)
+___________________________
+Focus  
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/mouse002.png)  
 * No broadband internet: I used a custom 'very slow' option(50kb/s) in chrome. Everything works fine, loading takes a little longer but my files aren't very big so this shouldn't be a big problem. If I had more time to work on this app I would add more feedback when the page is loading.
 * No javascript: The basic functionality still works but the colored feedback and basic form validation doesn't work anymore. 
 * No cookies/localstorage: I dont use either so the site works perfectly
@@ -89,5 +90,5 @@ IE11:
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/support001.png)
 
 ## contrast
-For my website I most used a shade of light blue with black letters. This gives a calming feeling with good contrast. Which can be seen here:
+For my website I mostly used a shade of light blue with black letters. This gives a calming feeling with good contrast. Which can be seen here:
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/contrast001.png)
