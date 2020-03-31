@@ -10,9 +10,6 @@
     border-radius: 20px;
 }
 
-.questionP{
-}
-
 .link{
     background-color: cornflowerblue;
     border-radius: 5px;
@@ -23,12 +20,23 @@
     border: 4px dotted blue;
 }
 
+.sendButton:focus{
+    margin-right: 10px;
+    border: 4px solid blue;
+}
+
+
 .beginButton{
     border: 2px solid red;
 }
 
 .saveButton{
     border: 4px dotted green;
+    margin-right: 10px;
+}
+
+.saveButton:focus{
+    border: 4px solid green;
     margin-right: 10px;
 }
 
@@ -88,4 +96,8 @@ input{
 
 input[type=submit]{
     width: 25%;
+}
+
+input:focus{
+    border: 3px solid blue;
 }
