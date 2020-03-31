@@ -119,3 +119,7 @@ input[type=radio]:focus{
 input:focus{
     border: 3px solid blue;
 }
+
+output{
+    font-weight: bold;
+}
