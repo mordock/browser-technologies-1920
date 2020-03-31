@@ -89,6 +89,11 @@ Chrome:
 IE11:
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/support001.png)
 
+For my range input I use an output to show the current value of the range. Output is not supported from IE11 so by default I put this value to nothing to combat this. All the other browsers will get to see the value when they change it. 
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/support002chrome.png)
+
+This is however not a big problem because IE11 has something similair build in:
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/support002exp.png)
 ## contrast
 For my website I mostly used a shade of light blue with black letters. This gives a calming feeling with good contrast. Which can be seen here:
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/contrast001.png)
