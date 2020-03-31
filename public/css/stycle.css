@@ -1,5 +1,16 @@
+*{
+    margin: 0;
+}
 /* ids */
+#dateButton{
+    border: 3px dotted blue;
+    background-color: cornflowerblue;
+    font-weight: bold;
+}
 
+#dateButton:focus{
+    border: 3px solid blue;
+}
 /* classes */
 .questionBox{
     border: 2mm solid cornflowerblue;
@@ -12,7 +23,8 @@
 
 .link{
     background-color: cornflowerblue;
-    border-radius: 5px;
+    border: none;
+    padding-top: 120px;
 }
 
 .sendButton{
@@ -72,6 +84,8 @@ form{
 header{
     background-color: cornflowerblue;
     text-align: center;
+    position: fixed;
+    width: 100%;
 }
 
 p{
@@ -96,6 +110,10 @@ input{
 
 input[type=submit]{
     width: 25%;
+}
+
+input[type=radio]:focus{
+    font-weight: bold;
 }
 
 input:focus{

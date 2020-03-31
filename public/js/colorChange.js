@@ -32,9 +32,6 @@ let q1Green = true, q2Green = true, q3Green = true, q4Green = true, q5Green = tr
 window.onload = function(){
     function test(){
 
-        console.log("4 " + q4Green);
-        console.log("5 " + q5Green);
-
         progressBarChange();
         //voornaam
         if(q1.value === ''){
@@ -173,6 +170,8 @@ function watchColorPicker(){
 function checkDate(){
     q4Label.style.backgroundColor = 'green';
 
+    console.log(q4);
+
     if(q4Green == true){
         numberGreen++;
         q4Green = false;
@@ -181,4 +180,8 @@ function checkDate(){
 
 function progressBarChange(){
     progressBar.value = numberGreen;
+}
+
+function outputUpdate(value){
+    document.querySelector('#volume').value = value;  
 }

@@ -9,10 +9,11 @@
 <body>
     <header>
         <h1>Minor-Web Enquete</h1>
+    
+        <p class="topTexts">Vergeet de link niet op te slaan als je later verder wil gaan!</p>
+        <progress id="progress" max="9" value="0"></progress>
     </header>
 
-    <p class="topTexts">Vergeet de link niet op te slaan als je later verder wil gaan!</p>
-    <progress id="progress" max="9" value="0"></progress>
 
     <div class="link">
         <% if (query.vNaam) { %>
@@ -81,8 +82,8 @@
         <div id="q7Label" class="question" list="tickmarks">
             <label>
                 <p>>Welk cijfer geef je BT op een schaal van 1-10?</p>
-                <input id="q7" type="number" name="num" min="1" max="10" value="<%= query.num %>">
-
+                <input id="q7" type="range" name="num" min="1" max="10" value="<%= query.num %>" oninput="outputUpdate(value)">
+                <output for="fader" id="volume"></output>
             </label><br>
         </div><br>
 
