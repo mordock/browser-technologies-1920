@@ -1,11 +1,7 @@
-Criteria
+## Link to assignment 2:
+https://maxweijersbt.herokuapp.com/
 
-    Zet je code op Github
-    Schrijf een Readme met:
-        een beschrijving van alle features die je hebt getest
-        een beschrijving van de Devices en browsers waar je op hebt getest
-        een beschrijving van de screenreader test
-        beschrijf hoe je de problemen hebt opgelost, of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
+## Assignment 1.2
 
 I checked the following features:  
 - Turning off images in the browser,  
@@ -52,7 +48,7 @@ For this test I used the build in windows screen reader. For this screen reader 
 You can navigate my overview page perfectly, but my detail page doesn't have focus states for my items so you can't listen to those.
 I can fix this by adding focus states to the detail page, this would also help with no mouse navigation. 
 
-Opdracht 2:
+## Assignment 2
 
 Wireflow:  
 ![alt test](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/Wireflow.png)
