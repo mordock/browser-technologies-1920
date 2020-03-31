@@ -57,6 +57,37 @@ Opdracht 2:
 Wireflow:  
 ![alt test](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/Wireflow.png)
 
-Enchantment:  
-Progress bar,  
+## assignment
+My case was to make a questionnaire which can be continued later on. It also needed to contain several question types.
 
+## description
+This web app is a simple questionnaire which you can continue by saving the given link after pressing save. This will fill in all the answers you can already given and keep everyting empty which you haven't. 
+
+## 8 features
+* No images: I dont use images so this is not a problem
+* No custom fonts: I dont use custom fonts, only build in fonts, which have fall backs.
+* Colors: [Can be found here](#contrast)
+* No mouse: Works, you can cycle through all the questions which have focus states
+No focus
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/mouse001.png)
+Focus
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/mouse002.png)
+* No broadband internet: I used a custom 'very slow' option(50kb/s) in chrome. Everything works fine, loading takes a little longer but my files aren't very big so this shouldn't be a big problem. If I had more time to work on this app I would add more feedback when the page is loading.
+* No javascript: The basic functionality still works but the colored feedback and basic form validation doesn't work anymore. 
+* No cookies/localstorage: I dont use either so the site works perfectly
+
+## Functional, Usable & Pleasurable
+* Functional: The app is function when you use the HTML/EJS. With just that you could use the app and make a questionnaire and save a link.
+* Usable: When you add CSS to the mix the app becomes usable, it adds to the UX and the overall feel of the app.
+* Pleasurable: The app becomes pleasurable when you add the javascript, this allows you to add extra features like progressbars and validation.
+
+## support
+I have color and date inputs which are not directly supported by IE11. This changes the the fields to a text field so you can still fill in te required information. 
+Chrome:
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/chrome.png)
+IE11:
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/support001.png)
+
+## contrast
+For my website I most used a shade of light blue with black letters. This gives a calming feeling with good contrast. Which can be seen here:
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/contrast001.png)
