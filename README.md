@@ -76,7 +76,7 @@ Focus
 ## Functional, Usable & Pleasurable
 * Functional: The app is function when you use the HTML/EJS. With just that you could use the app and make a questionnaire and save a link.
 * Usable: When you add CSS to the mix the app becomes usable, it adds to the UX and the overall feel of the app.
-* Pleasurable: The app becomes pleasurable when you add the javascript, this allows you to add extra features like progressbars and validation.
+* Pleasurable: The app becomes pleasurable when you add the javascript, this allows you to add extra features like progressbars, validation and local storage.
 
 ## support
 I have color and date inputs which are not directly supported by IE11. This changes the the fields to a text field so you can still fill in te required information. 
