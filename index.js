@@ -10,7 +10,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
-   res.render('prePage');
+   res.render('prePage', {
+
+   });
 });
 
 app.get('/form', (req, res) => {

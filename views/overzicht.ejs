@@ -14,7 +14,7 @@
     <p>Resultaten:</p>
 
     <% if (query.vNaam) { %>
-        <p> Jouw voornaam is: <%= query.vNaam %> </p>
+        <p id="firstNameA"> Jouw voornaam is: <%= query.vNaam %> </p>
     <% } %>
 
     <% if (query.aNaam) { %>
@@ -48,5 +48,8 @@
     <form>
         <input type="submit" value="terug" formaction="/">
     </form>
+
+    <script src="/js/localStorage.js"></script>
+
     </body>
 </html>
