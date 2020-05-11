@@ -120,7 +120,9 @@ Yes
   - [local storage](#local-storage)
   - welke browser de feature(s) wel/niet ondersteunen
   - een beschrijving van de accessibility issues die zijn onderzocht
+  - [accessiblity issues](#8-features)
 - De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
+- [Layers](#Functional-Usable-&-Pleasurable)
 - De user experience van de demo is goed
   - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
   - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
