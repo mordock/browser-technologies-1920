@@ -57,7 +57,7 @@ Wireflow:
 My case was to make a questionnaire which can be continued later on. It also needed to contain several question types.
 
 ## description
-This web app is a simple questionnaire which you can continue by saving the given link after pressing save. This will fill in all the answers you can already given and keep everyting empty which you haven't. 
+This web app is a simple questionnaire which you can continue by saving the given link after pressing save. This will fill in all the answers you can already given and keep everyting empty which you haven't. You can also see the person who used the web app before, this is updated after every questionnaire. 
 
 ## 8 features
 * No images: I dont use images so this is not a problem
@@ -106,14 +106,18 @@ In case local storage isn't supported for some reason, you will see this message
 - _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
 - _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._  
 
+### conclusie
+
+
 ## Criteria
 - De code staat in een repository op GitHub  
 Yes
 - Er is een Readme toegevoegd met daarin beschreven:
   - Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de  functional/reliable, usable en pleasurable laag.
   - [Wireflow](#Assignment-2)
-  - [Layers](#Functional,-Usable-&-Pleasurable)
+  - [Layers](#Functional-Usable-&-Pleasurable)
   - een beschrijving van de feature(s)/Browser Technologies
+  - [local storage](#local-storage)
   - welke browser de feature(s) wel/niet ondersteunen
   - een beschrijving van de accessibility issues die zijn onderzocht
 - De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
