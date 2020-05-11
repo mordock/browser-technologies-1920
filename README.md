@@ -107,10 +107,12 @@ In case local storage isn't supported for some reason, you will see this message
 - _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._  
 
 ## Criteria
-- De code staat in een repository op GitHub
+- De code staat in een repository op GitHub  
 Yes
 - Er is een Readme toegevoegd met daarin beschreven:
   - Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de  functional/reliable, usable en pleasurable laag.
+  - [Wireflow](#Assignment-2)
+  - [Layers](#Functional,-Usable-&-Pleasurable)
   - een beschrijving van de feature(s)/Browser Technologies
   - welke browser de feature(s) wel/niet ondersteunen
   - een beschrijving van de accessibility issues die zijn onderzocht
