@@ -123,21 +123,23 @@ Yes
   - Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de  functional/reliable, usable en pleasurable laag.
   - [Wireflow](#Assignment-2)
   - [Layers](#Functional-Usable-Pleasurable)
-  - een beschrijving van de feature(s)/Browser Technologies
+- een beschrijving van de feature(s)/Browser Technologies
   - [local storage](#local-storage)
-  - welke browser de feature(s) wel/niet ondersteunen
-  - een beschrijving van de accessibility issues die zijn onderzocht
+- welke browser de feature(s) wel/niet ondersteunen
+- [features](#support)
+- een beschrijving van de accessibility issues die zijn onderzocht
   - [accessiblity issues](#8-features)
 - De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
-- [Layers](#Functional-Usable-Pleasurable)
+  - [Layers](#Functional-Usable-Pleasurable)
 - De user experience van de demo is goed
   - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen  
   - [contrast](#contrast)
-  - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen  
+- het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen  
   All interactable elements have focus states like buttons and inputs.
-  - met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
-  The complete enhanced version is in-f***ing credeble with progess bars, local storages functionalities and amazing feedback.
+- met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
+  - The complete enhanced version is in-f***ing credeble with progess bars, local storage functionalities and amazing feedback.
 - Student kan de Basic functionaliteit van een use case doorgronden
 - Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
+  - feature detection allows you to check if the current system/brower supports a feature. If it doesn't the feature can be disable without other things breaking. The user can also be informed of the feature not working. This helps add to the pleasurable layer. 
 
 
