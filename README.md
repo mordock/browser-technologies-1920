@@ -73,7 +73,7 @@ Focus
 * No javascript: The basic functionality still works but the colored feedback and basic form validation doesn't work anymore. 
 * No cookies/localstorage: I dont use either so the site works perfectly
 
-## Functional, Usable & Pleasurable
+## Functional Usable Pleasurable
 * Functional: The app is function when you use the HTML/EJS. With just that you could use the app and make a questionnaire and save a link.
 * Usable: When you add CSS to the mix the app becomes usable, it adds to the UX and the overall feel of the app.
 * Pleasurable: The app becomes pleasurable when you add the javascript, this allows you to add extra features like progressbars, validation and local storage.
@@ -100,14 +100,21 @@ In my website I show, via local storage, which user before you used the app. Thi
 In case local storage isn't supported for some reason, you will see this message:  
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/storage_check.png)  
 
+### conclusion
 
-## Leerdoelen
+- I've learned how to utilize progressive enhancement in a website.
+- I've learned that accessability is important for any site.
+- I've learned how to improve a website with CSS and Javascript as extra layers. 
+- I've learned how to do browser detect and how to handle unsupported features.
+- I've learned how to do better and more complete tests for websites.
+
+#### full conclusion
 - _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
+During the first assignment I learned what technologies to look research and test. With the second assignment I learned how to implement this in a simple web app. Also during this I learned how to implement these features as enhancements to the HTML and CSS. 
 - _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
+I learned how to build up my web app in three layers, functional, usuable and pleasurable. The functional layer hold the HTML of your site, the usuable add CSS to improve the user experience increase accessibility. And the pleasurable layer adds the Javascript to make your web app truely nice to use. These lower layers should be the minimum of any site in case any of the top layers don't work for whatever reason. 
 - _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._  
-
-### conclusie
-
+During this project I implemented a feature with local storage which can be turned off or some browsers don't support it. If it isn't supported for any of these reasons the the text you would normally get is replaced with a message telling you that the feature isn't supported. This is to inform the user of why certain features don't work and how it could possibly be fixed to give the optimal experience for the user.
 
 ## Criteria
 - De code staat in een repository op GitHub  
@@ -115,18 +122,21 @@ Yes
 - Er is een Readme toegevoegd met daarin beschreven:
   - Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de  functional/reliable, usable en pleasurable laag.
   - [Wireflow](#Assignment-2)
-  - [Layers](#Functional-Usable-&-Pleasurable)
+  - [Layers](#Functional-Usable-Pleasurable)
   - een beschrijving van de feature(s)/Browser Technologies
   - [local storage](#local-storage)
   - welke browser de feature(s) wel/niet ondersteunen
   - een beschrijving van de accessibility issues die zijn onderzocht
   - [accessiblity issues](#8-features)
 - De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
-- [Layers](#Functional-Usable-&-Pleasurable)
+- [Layers](#Functional-Usable-Pleasurable)
 - De user experience van de demo is goed
-  - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
-  - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
+  - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen  
+  - [contrast](#contrast)
+  - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen  
+  All interactable elements have focus states like buttons and inputs.
   - met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
+  The complete enhanced version is in-f***ing credeble with progess bars, local storages functionalities and amazing feedback.
 - Student kan de Basic functionaliteit van een use case doorgronden
 - Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
 
