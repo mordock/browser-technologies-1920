@@ -98,4 +98,28 @@ For my website I mostly used a shade of light blue with black letters. This give
 In my website I show, via local storage, which user before you used the app. This functionality has a browser detect if the user has no cookies/local storage or if the browser doesn't support it.  
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/storage.png)  
 In case local storage isn't supported for some reason, you will see this message:  
-![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/storage_check.png)
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/storage_check.png)  
+
+
+## Leerdoelen
+- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
+- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
+- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._  
+
+## Criteria
+- De code staat in een repository op GitHub
+Yes
+- Er is een Readme toegevoegd met daarin beschreven:
+  - Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de  functional/reliable, usable en pleasurable laag.
+  - een beschrijving van de feature(s)/Browser Technologies
+  - welke browser de feature(s) wel/niet ondersteunen
+  - een beschrijving van de accessibility issues die zijn onderzocht
+- De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
+- De user experience van de demo is goed
+  - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
+  - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
+  - met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
+- Student kan de Basic functionaliteit van een use case doorgronden
+- Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
+
+
