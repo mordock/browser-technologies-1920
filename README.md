@@ -139,6 +139,7 @@ Yes
 - met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
   - The complete enhanced version is in-f***ing credeble with progess bars, local storage functionalities and amazing feedback.
 - Student kan de Basic functionaliteit van een use case doorgronden
+  - The user can always do the basic functionality of the web app, make a questionnaire. This is further improved by the css which add to the user experience and by javascript which adds features if they are supported
 - Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
   - feature detection allows you to check if the current system/brower supports a feature. If it doesn't the feature can be disable without other things breaking. The user can also be informed of the feature not working. This helps add to the pleasurable layer. 
 
