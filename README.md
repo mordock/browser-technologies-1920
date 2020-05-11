@@ -93,3 +93,9 @@ This is however not a big problem because IE11 has something similair build in:
 ## contrast
 For my website I mostly used a shade of light blue with black letters. This gives a calming feeling with good contrast. Which can be seen here:
 ![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/contrast001.png)
+
+## local storage
+In my website I show, via local storage, which user before you used the app. This functionality has a browser detect if the user has no cookies/local storage or if the browser doesn't support it.  
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/storage.png)  
+In case local storage isn't supported for some reason, you will see this message:  
+![alt_text](https://github.com/mordock/browser-technologies-1920/blob/master/school%20stuff/Resources/storage_check.png)
