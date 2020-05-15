@@ -109,11 +109,11 @@ In case local storage isn't supported for some reason, you will see this message
 - I've learned how to do better and more complete tests for websites.
 
 #### full conclusion
-- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
+- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._  
 During the first assignment I learned what technologies to look research and test. With the second assignment I learned how to implement this in a simple web app. Also during this I learned how to implement these features as enhancements to the HTML and CSS. 
-- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
+- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._  
 I learned how to build up my web app in three layers, functional, usuable and pleasurable. The functional layer hold the HTML of your site, the usuable add CSS to improve the user experience increase accessibility. And the pleasurable layer adds the Javascript to make your web app truely nice to use. These lower layers should be the minimum of any site in case any of the top layers don't work for whatever reason. 
-- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._  
+- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._   
 During this project I implemented a feature with local storage which can be turned off or some browsers don't support it. If it isn't supported for any of these reasons the the text you would normally get is replaced with a message telling you that the feature isn't supported. This is to inform the user of why certain features don't work and how it could possibly be fixed to give the optimal experience for the user.
 
 ## Criteria
